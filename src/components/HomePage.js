@@ -13,7 +13,7 @@ export default class HomePage extends React.Component {
 							streamers={this.props.streamers}
 							twitchClientId={process.env.TWITCH_CLIENT_ID}
 							showOffline={false} />
-					</div>
+						</div>
 				</div>
 				<div className="row">
 					<section className="large-8 columns">

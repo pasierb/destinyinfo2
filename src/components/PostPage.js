@@ -13,11 +13,11 @@ export default class PostPage extends React.Component {
 					</div>
 				</div>
 				<div className="row">
-					<div className="columns">
-						<Post post={post} />
-					</div>
-				</div>
-			</div>
+          <div className="columns">
+            <Post post={post} />
+          </div>
+        </div>
+      </div>
 		);
 	}
 };
