@@ -7,7 +7,7 @@ export default class BlogPage extends React.Component {
 			<div>
 				<div className="row column">
 					<h4 style={{ margin: 0 }} className="text-center">Newsy</h4>
-				</div>
+		  	</div>
 				<hr />
 				<div className="row">
 					<section className="large-8 columns" style={{ borderRight: '1px solid #E3E5E8' }}>
