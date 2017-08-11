@@ -1,0 +1,15 @@
+mixin post-list-item(post)
+	div.row
+		div.large-6.columns
+			if post.image.exists
+				p: img(src=post._.image.fit())
+		div.large-6.columns
+			h5: a(href='/blog/post/' + post.slug)= post.title
+			p
+				span
+					i.fa.fa-user
+					span &nbsp;#{post.author.name.first}&nbsp;&nbsp;
+				span
+					i.fa.fa-calendar
+					span &nbsp;#{post._.publishedDate.format('MMMM Do, YYYY')} &nbsp;&nbsp;
+			p!= post.content.brief
